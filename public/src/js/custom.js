@@ -11,7 +11,7 @@ $(document).ready(function() {
 	});
 
 	function checkWidth() {
-		var buttonsize = $('.asigra-btn').width();
+		
 		var windowsize = $(window).width();
 
 		if(windowsize <= 1210 && windowsize > 980) {
@@ -27,9 +27,10 @@ $(document).ready(function() {
 		else {
 			$('.btn-lg').css("font-size", "16px");
 		}
-
+		
+		var buttonsize = $('.uwo-btn').width();
 		$('.cc-btn').width(buttonsize);
-		$('.uwo-btn').width(buttonsize);
+		$('.asigra-btn').width(buttonsize);
 	}
 	checkWidth();
 	$(window).resize(checkWidth);	
